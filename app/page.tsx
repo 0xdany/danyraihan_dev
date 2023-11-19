@@ -117,12 +117,12 @@ export default function Home() {
         {/* Panel */}
         <motion.div
           style={{ x: imageXCalc }}
-          className="sticky top-1/2 mx-auto aspect-video w-[1600px] max-w-[90%] rounded-[60px]
+          className="sticky top-1/2 mx-auto h-fit w-[1600px] max-w-[90%] rounded-[60px]
           bg-white shadow-2xl grid grid-cols-1 justify-items-center
           md:top-1/4"
         >
           {/* Area */}
-          <div className="w-[90%] h-fit flex-col">
+          <div className="w-[90%] h-fit flex-col pb-10">
             <div className="h-fit pb-4 py-2 flex justify-center  border-b-[1px] border-slate-400">
               <p
                 className="text-4xl justify-center font-semibold
