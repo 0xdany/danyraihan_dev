@@ -45,7 +45,7 @@ export default function Home() {
           <div className="window-mask flex flex-col rounded-3xl bg-white p-12 md:flex-row gap-10 ">
             <div className="flex h-full flex-col shadow-md rounded-xl px-8 py-5">
               {/* Name */}
-              <div className="md:mb-auto mb-1 ">
+              <div className="md:mb-auto mb-1">
                 <p
                   className="text-2xl  font-md leading-loose  font-sans font-semibold py-2
                   bg-gradient-to-r from-cyan-800 to-orange-950 inline-block text-transparent bg-clip-text
