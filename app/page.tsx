@@ -25,7 +25,7 @@ export default function Home() {
   const scale = useTransform(scrollYProgressSpring, [0, 1], [1, 12]);
   const imageX = useTransform(scrollYProgressSpring, [0, 1], [50, 0]);
   const imageXCalc = useMotionTemplate`max(0px, calc(${imageX}% + calc(${imageX}vw - 300px)))`;
-  const opacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   return (
     <main>
@@ -122,7 +122,7 @@ export default function Home() {
           md:top-1/4"
         >
           {/* Area */}
-          <div className="w-[90%] h-[90%] flex-col">
+          <div className="w-[90%] h-fit flex-col">
             <div className="h-fit pb-4 py-2 flex justify-center  border-b-[1px] border-slate-400">
               <p
                 className="text-4xl justify-center font-semibold
