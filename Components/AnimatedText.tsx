@@ -65,7 +65,7 @@ export default function AnimatedText({
 
   return (
     <Wrapper className={className}>
-      <span className="sr-only">{textArray.join(" ")}</span>
+      <span className="hidden">{textArray.join(" ")}</span>
       <motion.span
         ref={ref}
         initial="hidden"

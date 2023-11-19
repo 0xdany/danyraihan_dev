@@ -112,7 +112,7 @@ export default function Home() {
                     "Solidity",
                     "C++",
                     "Java",
-                    "C#",
+                    "C# ",
                   ]}
                   className="text-lg text-slate-800 2xl:text-2xl"
                   repeatDelay={5000}
