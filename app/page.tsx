@@ -103,15 +103,15 @@ export default function Home() {
                 <AnimatedText
                   el="h2"
                   text={[
-                    "NextJs",
-                    "ReactJS",
-                    "TailwindCSS",
-                    "Unity",
-                    "MongoDB",
-                    "Supabase",
-                    "Solidity",
-                    "C++",
-                    "Java",
+                    "NextJs •",
+                    "ReactJS •",
+                    "TailwindCSS •",
+                    "Unity •",
+                    "MongoDB •",
+                    "Supabase •",
+                    "Solidity •",
+                    "C++ •",
+                    "Java •",
                     "C# ",
                   ]}
                   className="text-lg text-slate-800 2xl:text-2xl"
@@ -120,15 +120,15 @@ export default function Home() {
                 <AnimatedText
                   el="h2"
                   text={[
-                    "PosgreSQL",
-                    "Arduino",
-                    "Figma",
-                    "Arduino",
-                    "Vercel",
-                    "R",
-                    "Jupiter",
-                    "IntelliJ",
-                    "VS Code",
+                    "PosgreSQL •",
+                    "Arduino •",
+                    "Figma •",
+                    "Arduino •",
+                    "Vercel •",
+                    "R •",
+                    "Jupiter •",
+                    "IntelliJ •",
+                    "VS Code •",
                     "Github ",
                   ]}
                   className="text-lg text-slate-800 2xl:text-2xl"

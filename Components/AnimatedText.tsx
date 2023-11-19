@@ -78,7 +78,7 @@ export default function AnimatedText({
       >
         {textArray.map((line, lineIndex) => (
           <span className="block" key={`${line}-${lineIndex}`}>
-            {line.split(" • ").map((word, wordIndex) => (
+            {line.split(" ").map((word, wordIndex) => (
               <span className="inline-block" key={`${word}-${wordIndex}`}>
                 {word.split("").map((char, charIndex) => (
                   <motion.span
