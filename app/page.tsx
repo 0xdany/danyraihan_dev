@@ -99,7 +99,7 @@ export default function Home() {
                 I have worked with
               </div>
               {/* list of skills */}
-              <div className="flex flex-wrap gap-10 justify-center text-lg font-semibold text-white border-y-2 py-8 overflow-auto">
+              <div className="flex flex-wrap gap-10 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto">
                 <AnimatedText
                   el="h2"
                   text={[
