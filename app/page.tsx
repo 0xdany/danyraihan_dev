@@ -1,5 +1,7 @@
 "use client";
 
+import { useRef } from "react";
+import Image from "next/image";
 import {
   MotionValue,
   motion,
@@ -8,9 +10,9 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
+
 import "@/styles/globals.css";
-import { useRef } from "react";
-import Image from "next/image";
+import AnimatedText from "@/Components/AnimatedText";
 
 export default function Home() {
   const ref = useRef(null);
@@ -26,21 +28,26 @@ export default function Home() {
   const imageX = useTransform(scrollYProgressSpring, [0, 1], [50, 0]);
   const imageXCalc = useMotionTemplate`max(0px, calc(${imageX}% + calc(${imageX}vw - 300px)))`;
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+  const opacityReverse = useTransform(
+    scrollYProgress,
+    [0, 0.18, 0.25],
+    [0, 0, 1]
+  );
 
   return (
     <main>
-      <div ref={ref} className="relative z-10 h-[200vh] overflow-clip">
+      <div ref={ref} className="relative z-1 h-[200vh] overflow-clip">
         <motion.div
           style={{ scale }}
           className="hero-background sticky left-0 top-0 grid h-screen origin-[50%_70%] gap-2 p-6 pt-12 [grid-template-rows:4fr_1fr]
           md:origin-[90%_40%] md:pt-20"
         >
-          <div className="window-mask flex flex-col rounded-3xl bg-slate-50 p-12 md:flex-row">
-            <div className="flex h-full flex-col">
-              {/* Title */}
+          <div className="window-mask flex flex-col rounded-3xl bg-white p-12 md:flex-row gap-10 ">
+            <div className="flex h-full flex-col shadow-md rounded-xl px-8 py-5">
+              {/* Name */}
               <div className="md:mb-auto mb-1 ">
                 <p
-                  className="text-2xl max-w-[12ch] font-md leading-loose  font-sans font-semibold py-2
+                  className="text-2xl  font-md leading-loose  font-sans font-semibold py-2
                   bg-gradient-to-r from-cyan-800 to-orange-950 inline-block text-transparent bg-clip-text
                   md:text-4xl 
                   xl:text-6xl
@@ -53,7 +60,7 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Desc */}
+              {/* Perks */}
               <div className="text-md space-y-1 pl-1 ">
                 <p className="border-b-[1px] border-slate-200 mb-1">
                   Full-Stack Developer
@@ -83,6 +90,53 @@ export default function Home() {
                 <br />
               </div>
             </div>
+            {/* Center skills */}
+            <div className="w-5/12 flex-col hidden lg:block">
+              <div
+                className="text-2xl font-semibold px-4 flex justify-center items-center mb-3 
+                  bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text
+                  "
+              >
+                I have worked with
+              </div>
+              {/* list of skills */}
+              <div className="flex flex-wrap gap-10 justify-center text-lg font-semibold text-white border-y-2 py-8 ">
+                <AnimatedText
+                  el="h2"
+                  text={[
+                    "NextJs",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "Unity",
+                    "MongoDB",
+                    "Supabase",
+                    "Solidity",
+                    "C++",
+                    "Java",
+                    "C#",
+                  ]}
+                  className="text-2xl text-slate-800"
+                  repeatDelay={5000}
+                />
+                <AnimatedText
+                  el="h2"
+                  text={[
+                    "PosgreSQL  ",
+                    "Arduino",
+                    "Figma",
+                    "Arduino",
+                    "Vercel",
+                    "R",
+                    "Jupiter",
+                    "IntelliJ",
+                    "VS Code",
+                    "Github",
+                  ]}
+                  className="text-2xl text-slate-800 "
+                  repeatDelay={5000}
+                />
+              </div>
+            </div>
 
             {/* Scroll hole */}
             <div
@@ -95,12 +149,12 @@ export default function Home() {
 
       {/* Stuff inside hole */}
       <div
-        className="mt-[-220vh] pt-[47vh] h-fit overflow-clip  
+        className="z-2 mt-[-220vh] pt-[47vh] h-fit overflow-clip  
         bg-gradient-to-t from-sky-400 to-blue-500 pb-16"
       >
         <motion.div
-          style={{ x: imageXCalc, opacity }}
-          className="mb-[250px] px-7 "
+          style={{ x: imageXCalc, opacity: opacity }}
+          className="mb-[250px] px-5 "
         >
           <Image
             priority
@@ -116,14 +170,14 @@ export default function Home() {
 
         {/* Panel */}
         <motion.div
-          style={{ x: imageXCalc }}
-          className="sticky top-1/2 mx-auto h-fit w-[1600px] max-w-[90%] rounded-[60px]
+          style={{ x: imageXCalc, opacity: opacityReverse }}
+          className="sticky top-1/2 mx-auto w-[1600px] max-w-[90%] rounded-[60px]
           bg-white shadow-2xl grid grid-cols-1 justify-items-center
           md:top-1/4"
         >
           {/* Area */}
-          <div className="w-[90%] h-fit flex-col pb-10">
-            <div className="h-fit pb-4 py-2 flex justify-center  border-b-[1px] border-slate-400">
+          <div className="w-[90%] flex-col pb-10">
+            <div className="pb-4 py-2 flex justify-center  border-b-[1px] border-slate-400">
               <p
                 className="text-4xl justify-center font-semibold
                   bg-gradient-to-r to-cyan-600 from-orange-700 inline-block text-transparent bg-clip-text py-1"
@@ -133,16 +187,27 @@ export default function Home() {
             </div>
 
             {/* Timeline */}
-            <div className="ml-8">
+            <div className="">
               {/* Genta */}
               <div className="relative pl-8 sm:pl-32 py-6 group">
                 <div className="flex flex-col sm:flex-row mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                   <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                     Now
                   </time>
-                  <div className="text-xl font-bold text-slate-900">
+                  <a
+                    href="https://genta.tech/"
+                    target="_blank"
+                    className="text-xl font-bold text-white  px-2 py-1 rounded-xl flex gap-1 bg-gradient-to-r from-slate-800 to-cyan-700"
+                  >
                     Genta Technology
-                  </div>
+                    <Image
+                      priority
+                      src="link_icon.svg"
+                      width="20"
+                      height="20"
+                      alt="link"
+                    />
+                  </a>
                 </div>
 
                 {/* Tech */}
@@ -178,9 +243,20 @@ export default function Home() {
                   <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                     Aug, 2023
                   </time>
-                  <div className="text-xl font-bold text-slate-900">
+                  <a
+                    href="https://github.com/Genta-Technology/Document-Search"
+                    target="_blank"
+                    className="text-xl font-bold text-white  px-2 py-1 rounded-xl flex gap-1 bg-gradient-to-r from-green-950 to-yellow-900"
+                  >
                     Document Search
-                  </div>
+                    <Image
+                      priority
+                      src="link_icon.svg"
+                      width="20"
+                      height="20"
+                      alt="link"
+                    />
+                  </a>
                 </div>
 
                 {/* Tech */}
@@ -210,9 +286,20 @@ export default function Home() {
                   <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                     Sept, 2023
                   </time>
-                  <div className="text-xl font-bold text-slate-900">
+                  <a
+                    href="https://github.com/0xdany/bookmarq"
+                    target="_blank"
+                    className="text-xl font-bold text-white  px-2 py-1 rounded-xl flex gap-1 bg-gradient-to-r from-sky-950 to-red-900"
+                  >
                     Bookmarq: bookmark-sharing platform
-                  </div>
+                    <Image
+                      priority
+                      src="link_icon.svg"
+                      width="20"
+                      height="20"
+                      alt="link"
+                    />
+                  </a>
                 </div>
 
                 {/* Tech */}
@@ -246,9 +333,20 @@ export default function Home() {
                   <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                     Dec, 2022
                   </time>
-                  <div className="text-xl font-bold text-slate-900">
+                  <a
+                    href="https://github.com/0xdany/hardhat-fund-me-bp"
+                    target="_blank"
+                    className="text-xl font-bold text-white  px-2 py-1 rounded-xl flex gap-1 bg-gradient-to-r from-orange-950 to-blue-900"
+                  >
                     Hardhat Funding Boilerplate
-                  </div>
+                    <Image
+                      priority
+                      src="link_icon.svg"
+                      width="20"
+                      height="20"
+                      alt="link"
+                    />
+                  </a>
                 </div>
 
                 {/* Tech */}
@@ -283,7 +381,7 @@ export default function Home() {
                   <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                     June, 2021
                   </time>
-                  <div className="text-xl font-bold text-slate-900">
+                  <div className="text-xl font-bold text-white  px-2 py-1 rounded-xl flex gap-1 bg-gradient-to-r from-slate-600 to-zinc-700">
                     Safecious: Body Temperature Monitoring Wearable
                   </div>
                 </div>
