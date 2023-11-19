@@ -91,16 +91,15 @@ export default function Home() {
               </div>
             </div>
             {/* Center skills */}
-            <div className="w-5/12 h-full flex-col hidden lg:grid overflow-scroll">
+            <div className="w-5/12 h-full flex-col hidden xl:block overflow-auto">
               <div
                 className="text-2xl font-semibold px-4 flex justify-center items-center mb-3 
-                  bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text
-                  "
+                  bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text"
               >
                 I have worked with
               </div>
               {/* list of skills */}
-              <div className="flex flex-wrap gap-10 justify-center text-lg font-semibold text-white border-y-2 py-8 ">
+              <div className="flex flex-wrap gap-10 justify-center text-lg font-semibold text-white border-y-2 py-8 overflow-auto">
                 <AnimatedText
                   el="h2"
                   text={[
@@ -115,13 +114,13 @@ export default function Home() {
                     "Java",
                     "C#",
                   ]}
-                  className="text-2xl text-slate-800"
+                  className="text-lg text-slate-800 2xl:text-2xl"
                   repeatDelay={5000}
                 />
                 <AnimatedText
                   el="h2"
                   text={[
-                    "PosgreSQL  ",
+                    "PosgreSQL",
                     "Arduino",
                     "Figma",
                     "Arduino",
@@ -130,9 +129,9 @@ export default function Home() {
                     "Jupiter",
                     "IntelliJ",
                     "VS Code",
-                    "Github",
+                    "Github ",
                   ]}
-                  className="text-2xl text-slate-800 "
+                  className="text-lg text-slate-800 2xl:text-2xl"
                   repeatDelay={5000}
                 />
               </div>
