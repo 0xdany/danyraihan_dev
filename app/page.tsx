@@ -91,7 +91,7 @@ export default function Home() {
               </div>
             </div>
             {/* Center skills */}
-            <div className="w-5/12 h-full flex-col hidden lg:flex overflow-auto">
+            <div className="w-5/12 h-full overflow-hidden flex-col hidden lg:flex">
               <div
                 className="text-2xl font-semibold px-4 flex justify-center items-center mb-3 
                   bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text"
@@ -99,7 +99,7 @@ export default function Home() {
                 I have worked with
               </div>
               {/* list of skills */}
-              <div className="flex flex-wrap gap-10 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto text-center">
+              <div className="flex flex-wrap gap-1 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto text-center">
                 <AnimatedText
                   el="p"
                   text={[

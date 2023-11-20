@@ -77,21 +77,19 @@ export default function AnimatedText({
         aria-hidden
       >
         {textArray.map((line, lineIndex) => (
-          <span className="flex text-center" key={`${line}-${lineIndex}`}>
+          <span className="block" key={`${line}-${lineIndex}`}>
             {line.split(" ").map((word, wordIndex) => (
-              <span
-                className="inline-flex text-center"
-                key={`${word}-${wordIndex}`}
-              >
+              <span className="inline-block" key={`${word}-${wordIndex}`}>
                 {word.split("").map((char, charIndex) => (
                   <motion.span
                     key={`${char}-${charIndex}`}
-                    className="inline-flex"
+                    className="inline-block"
                     variants={animation}
                   >
                     {char}
                   </motion.span>
                 ))}
+                <span className="inline-block">&nbsp;</span>
               </span>
             ))}
           </span>
