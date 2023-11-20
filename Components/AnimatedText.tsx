@@ -65,13 +65,13 @@ export default function AnimatedText({
 
   return (
     <Wrapper className={className}>
-      <span className="sr-only">{textArray.join(" ")}</span>
+      <span className="hidden sr-only">{textArray.join(" ")}</span>
       <motion.span
         ref={ref}
         initial="hidden"
         animate={controls}
         variants={{
-          visible: { transition: { staggerChildren: 0.01 } },
+          visible: { transition: { staggerChildren: 0.02 } },
           hidden: {},
         }}
         aria-hidden
