@@ -104,7 +104,7 @@ export default function Home() {
                 </span>
               </div>
               {/* list of skills */}
-              <div className="flex flex-wrap lg:gap-1 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto overflow-y-scroll text-center">
+              <div className="flex flex-wrap lg:gap-6 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto overflow-y-scroll text-center">
                 <AnimatedText
                   el="p"
                   text={[
