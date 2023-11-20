@@ -71,7 +71,7 @@ export default function AnimatedText({
         initial="hidden"
         animate={controls}
         variants={{
-          visible: { transition: { staggerChildren: 0.02 } },
+          visible: { transition: { staggerChildren: 0.008 } },
           hidden: {},
         }}
         aria-hidden

@@ -47,7 +47,7 @@ export default function Home() {
               {/* Name */}
               <div className="md:mb-auto mb-1">
                 <p
-                  className="text-2xl  font-md leading-loose  font-sans font-semibold py-2
+                  className="text-2xl font-md leading-loose  font-sans font-semibold py-2
                   bg-gradient-to-r from-cyan-800 to-orange-950 inline-block text-transparent bg-clip-text
                   md:text-4xl 
                   xl:text-6xl
@@ -55,13 +55,13 @@ export default function Home() {
                 >
                   Dany Raihan
                 </p>
-                <p className="text-lg text-slate-500 font-md ml-1 border-t-[2px] border-slate-200">
+                <p className="xl:text-lg lg:text-base text-xs  text-slate-500 font-md ml-1 border-t-[2px] border-slate-200">
                   2nd Year Major in Computer Science at UBC
                 </p>
               </div>
 
               {/* Perks */}
-              <div className="text-md space-y-1 pl-1 ">
+              <div className="xl:text-base lg:text-sm text-xs space-y-1 pl-1 sm:mt-0 mt-6">
                 <p className="border-b-[1px] border-slate-200 mb-1">
                   Full-Stack Developer
                 </p>
@@ -92,52 +92,25 @@ export default function Home() {
             </div>
 
             {/* Center skills */}
-            <div className="w-full h-[450px] overflow-hidden flex-col hidden lg:flex items-center justify-center px-6">
-              <div
-                className="xl:text-2xl text-xl font-semibold px-4 flex flex-col justify-center items-center
-                  bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text mt-6 mb-4"
-              >
-                I have worked with
-                <span className="xl:hidden inline-block text-base font-light">
+            <div className="w-full h-[450px] overflow-hidden flex-col hidden lg:flex items-center justify-center px-6 ">
+              <div className=" flex flex-col justify-center items-centermt-6 mb-4 ">
+                <div className="xl:text-2xl text-xl font-semibold px-4 bg-gradient-to-r to-cyan-600 from-orange-700 text-transparent bg-clip-text">
+                  I have worked with
+                </div>
+                <span className="xl:hidden inline-flex text-base font-light justify-center">
                   {" "}
                   (scroll...)
                 </span>
               </div>
               {/* list of skills */}
-              <div className="h-full flex lg:gap-2 items-center justify-center text-lg font-semibold text-white border-t-2 mt-4 overflow-auto overflow-y-scroll text-center">
+              <div className="h-full flex lg:gap-2 items-center justify-center text-lg font-semibold text-white mt-4 overflow-auto overflow-y-scroll text-center">
                 <AnimatedText
                   el="p"
-                  text={[
-                    "NextJs •",
-                    "ReactJS •",
-                    "TailwindCSS •",
-                    "Unity •",
-                    "MongoDB •",
-                    "Supabase •",
-                    "Solidity •",
-                    "C++ •",
-                    "Java •",
-                    "C# ",
-                  ]}
-                  className="text-base text-slate-800 xl:text-3xl lg:text-lg inline-flex text-center h-full"
-                  repeatDelay={5000}
-                />
-                <AnimatedText
-                  el="p"
-                  text={[
-                    "PosgreSQL •",
-                    "Arduino •",
-                    "Figma •",
-                    "Arduino •",
-                    "Vercel •",
-                    "R •",
-                    "Jupiter •",
-                    "IntelliJ •",
-                    "VS Code •",
-                    "Github ",
-                  ]}
-                  className="text-base text-slate-800 xl:text-3xl lg:text-lg inline-flex text-center h-full"
-                  repeatDelay={5000}
+                  text={
+                    "NextJs • ReactJS • TailwindCSS • Unity • MongoDB • Supabase • Solidity • C++ • Java • C# • PosgreSQL • Arduino • Figma • Arduino • Vercel • R • Jupiter • IntelliJ • VS Code • Github"
+                  }
+                  className="text-base xl:text-3xl lg:text-lg inline-flex text-center h-full text-slate-700"
+                  repeatDelay={10000}
                 />
               </div>
             </div>
@@ -339,7 +312,7 @@ export default function Home() {
                     Dec, 2022
                   </time>
                   <a
-                    href="https://github.com/0xdany/hardhat-fund-me-bp"
+                    href="https://github.com/0xdany/hardhat-crowdfunding-bp"
                     target="_blank"
                     className="text-xl font-bold text-white  px-2 py-1 rounded-xl flex gap-1 bg-gradient-to-r from-orange-950 to-blue-900"
                   >
