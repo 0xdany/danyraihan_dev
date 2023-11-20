@@ -91,7 +91,7 @@ export default function Home() {
               </div>
             </div>
             {/* Center skills */}
-            <div className="w-5/12 h-full flex-col hidden xl:block overflow-auto">
+            <div className="w-5/12 h-full flex-col hidden lg:flex overflow-auto">
               <div
                 className="text-2xl font-semibold px-4 flex justify-center items-center mb-3 
                   bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text"
@@ -99,39 +99,39 @@ export default function Home() {
                 I have worked with
               </div>
               {/* list of skills */}
-              <div className="flex flex-wrap gap-10 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto">
+              <div className="flex flex-wrap gap-10 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto text-center">
                 <AnimatedText
-                  el="h2"
+                  el="p"
                   text={[
-                    "NextJs •",
-                    "ReactJS •",
-                    "TailwindCSS •",
-                    "Unity •",
-                    "MongoDB •",
-                    "Supabase •",
-                    "Solidity •",
-                    "C++ •",
-                    "Java •",
+                    "NextJs ",
+                    "ReactJS ",
+                    "TailwindCSS ",
+                    "Unity ",
+                    "MongoDB ",
+                    "Supabase ",
+                    "Solidity ",
+                    "C++ ",
+                    "Java ",
                     "C# ",
                   ]}
-                  className="text-lg text-slate-800 2xl:text-2xl"
+                  className="text-sm text-slate-800 xl:text-2xl inline-flex text-center"
                   repeatDelay={5000}
                 />
                 <AnimatedText
-                  el="h2"
+                  el="p"
                   text={[
-                    "PosgreSQL •",
-                    "Arduino •",
-                    "Figma •",
-                    "Arduino •",
-                    "Vercel •",
-                    "R •",
-                    "Jupiter •",
-                    "IntelliJ •",
-                    "VS Code •",
+                    "PosgreSQL ",
+                    "Arduino ",
+                    "Figma ",
+                    "Arduino ",
+                    "Vercel ",
+                    "R ",
+                    "Jupiter ",
+                    "IntelliJ ",
+                    "VS Code ",
                     "Github ",
                   ]}
-                  className="text-lg text-slate-800 2xl:text-2xl"
+                  className="text-sm text-slate-800 xl:text-2xl inline-flex text-center"
                   repeatDelay={5000}
                 />
               </div>

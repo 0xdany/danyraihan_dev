@@ -65,31 +65,33 @@ export default function AnimatedText({
 
   return (
     <Wrapper className={className}>
-      <span className="hidden">{textArray.join(" ")}</span>
+      <span className="sr-only">{textArray.join(" ")}</span>
       <motion.span
         ref={ref}
         initial="hidden"
         animate={controls}
         variants={{
-          visible: { transition: { staggerChildren: 0.05 } },
+          visible: { transition: { staggerChildren: 0.01 } },
           hidden: {},
         }}
         aria-hidden
       >
         {textArray.map((line, lineIndex) => (
-          <span className="block" key={`${line}-${lineIndex}`}>
+          <span className="flex text-center" key={`${line}-${lineIndex}`}>
             {line.split(" ").map((word, wordIndex) => (
-              <span className="inline-block" key={`${word}-${wordIndex}`}>
+              <span
+                className="inline-flex text-center"
+                key={`${word}-${wordIndex}`}
+              >
                 {word.split("").map((char, charIndex) => (
                   <motion.span
                     key={`${char}-${charIndex}`}
-                    className="inline-block"
+                    className="inline-flex"
                     variants={animation}
                   >
                     {char}
                   </motion.span>
                 ))}
-                <span className="inline-block">&nbsp;</span>
               </span>
             ))}
           </span>
