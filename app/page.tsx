@@ -92,10 +92,10 @@ export default function Home() {
             </div>
 
             {/* Center skills */}
-            <div className="w-full h-[550px] overflow-hidden flex-col hidden lg:flex ">
+            <div className="w-full h-[450px] bg-red-300 overflow-hidden flex-col hidden lg:flex items-center justify-center ">
               <div
-                className="text-2xl font-semibold px-4 flex flex-col justify-center items-center mb-3 
-                  bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text "
+                className="xl:text-2xl text-xl font-semibold px-4 flex flex-col justify-center items-center
+                  bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text mt-6"
               >
                 I have worked with
                 <span className="xl:hidden inline-block text-base font-light">
@@ -104,7 +104,7 @@ export default function Home() {
                 </span>
               </div>
               {/* list of skills */}
-              <div className="flex flex-wrap lg:gap-6 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto overflow-y-scroll text-center">
+              <div className="h-full flex lg:gap-2 items-center justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto overflow-y-scroll text-center">
                 <AnimatedText
                   el="p"
                   text={[
@@ -119,7 +119,7 @@ export default function Home() {
                     "Java •",
                     "C# ",
                   ]}
-                  className="text-xs text-slate-800 xl:text-2xl lg:text-lg inline-flex text-center"
+                  className="text-sm text-slate-800 xl:text-3xl lg:text-lg inline-flex text-center"
                   repeatDelay={5000}
                 />
                 <AnimatedText
@@ -136,7 +136,7 @@ export default function Home() {
                     "VS Code •",
                     "Github ",
                   ]}
-                  className="text-xs text-slate-800 xl:text-2xl lg:text-lg inline-flex text-center"
+                  className="text-sm text-slate-800 xl:text-3xl lg:text-lg inline-flex text-center"
                   repeatDelay={5000}
                 />
               </div>
