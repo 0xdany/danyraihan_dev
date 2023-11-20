@@ -92,7 +92,7 @@ export default function Home() {
             </div>
 
             {/* Center skills */}
-            <div className="w-full h-[450px] overflow-hidden flex-col hidden lg:flex items-center justify-center ">
+            <div className="w-full h-[450px] overflow-hidden flex-col hidden lg:flex items-center justify-center px-6">
               <div
                 className="xl:text-2xl text-xl font-semibold px-4 flex flex-col justify-center items-center
                   bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text mt-6 mb-4"
@@ -104,7 +104,7 @@ export default function Home() {
                 </span>
               </div>
               {/* list of skills */}
-              <div className="h-full flex lg:gap-2 items-center justify-center text-lg font-semibold text-white border-t-2  overflow-auto overflow-y-scroll text-center">
+              <div className="h-full flex lg:gap-2 items-center justify-center text-lg font-semibold text-white border-t-2 mt-4 overflow-auto overflow-y-scroll text-center">
                 <AnimatedText
                   el="p"
                   text={[
