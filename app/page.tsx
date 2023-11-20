@@ -91,7 +91,7 @@ export default function Home() {
               </div>
             </div>
             {/* Center skills */}
-            <div className="w-5/12 h-full overflow-hidden flex-col hidden lg:flex">
+            <div className="w-4/12 h-full overflow-hidden flex-col hidden lg:flex">
               <div
                 className="text-2xl font-semibold px-4 flex justify-center items-center mb-3 
                   bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text"
