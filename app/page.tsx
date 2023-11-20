@@ -166,6 +166,7 @@ export default function Home() {
             width="250"
             height="250"
             alt="Follow us on Twitter"
+            className="-ml-16 sm:block hidden"
           />
           <div className="text-white flex justify-start font-normal">
             Scroll for more
