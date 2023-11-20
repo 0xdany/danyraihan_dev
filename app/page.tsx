@@ -43,7 +43,7 @@ export default function Home() {
           md:origin-[90%_40%] md:pt-20"
         >
           <div className="window-mask flex flex-col rounded-3xl bg-white p-12 md:flex-row gap-10 ">
-            <div className="flex h-full flex-col shadow-md rounded-xl px-8 py-5">
+            <div className="flex h-full flex-col shadow-md rounded-xl px-8 py-5 w-4/5">
               {/* Name */}
               <div className="md:mb-auto mb-1">
                 <p
@@ -90,16 +90,21 @@ export default function Home() {
                 <br />
               </div>
             </div>
+
             {/* Center skills */}
-            <div className="w-4/12 h-full overflow-hidden flex-col hidden lg:flex">
+            <div className="w-full h-[550px] overflow-hidden flex-col hidden lg:flex ">
               <div
-                className="text-2xl font-semibold px-4 flex justify-center items-center mb-3 
-                  bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text"
+                className="text-2xl font-semibold px-4 flex flex-col justify-center items-center mb-3 
+                  bg-gradient-to-r to-cyan-500 from-orange-700 text-transparent bg-clip-text "
               >
                 I have worked with
+                <span className="xl:hidden inline-block text-base font-light">
+                  {" "}
+                  (scroll...)
+                </span>
               </div>
               {/* list of skills */}
-              <div className="flex flex-wrap gap-1 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto text-center">
+              <div className="flex flex-wrap lg:gap-1 justify-center text-lg font-semibold text-white border-t-2 py-8 overflow-auto overflow-y-scroll text-center">
                 <AnimatedText
                   el="p"
                   text={[
@@ -114,7 +119,7 @@ export default function Home() {
                     "Java •",
                     "C# ",
                   ]}
-                  className="text-sm text-slate-800 xl:text-2xl inline-flex text-center"
+                  className="text-xs text-slate-800 xl:text-2xl lg:text-lg inline-flex text-center"
                   repeatDelay={5000}
                 />
                 <AnimatedText
@@ -131,7 +136,7 @@ export default function Home() {
                     "VS Code •",
                     "Github ",
                   ]}
-                  className="text-sm text-slate-800 xl:text-2xl inline-flex text-center"
+                  className="text-xs text-slate-800 xl:text-2xl lg:text-lg inline-flex text-center"
                   repeatDelay={5000}
                 />
               </div>
