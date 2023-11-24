@@ -14,6 +14,8 @@ import {
 import "@/styles/globals.css";
 import AnimatedText from "@/Components/AnimatedText";
 
+import { SmileAnim } from "@/Components/Animations";
+
 export default function Home() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -131,18 +133,10 @@ export default function Home() {
       >
         <motion.div
           style={{ x: imageXCalc, opacity: opacity }}
-          className="mb-[250px] px-5 "
+          className="mb-[250px] px-5"
         >
-          <Image
-            priority
-            src="smile.svg"
-            width="250"
-            height="250"
-            alt="Follow us on Twitter"
-            className="-ml-16 sm:block hidden"
-          />
-          <div className="text-white flex justify-start font-normal">
-            Scroll for more
+          <div className="-ml-[70px] mt-8 sm:block hidden">
+            <SmileAnim />
           </div>
         </motion.div>
 
@@ -392,9 +386,7 @@ export default function Home() {
       </div>
 
       {/* Rest  */}
-      <div className="space-y-[80px] bg-gradient-to-b from-sky-400 to-blue-500 text-[300px]">
-        <p className="text-white">such a great guy</p>
-      </div>
+      <div className="space-y-[80px] bg-gradient-to-b from-sky-400 to-indigo-700 text-[300px]"></div>
     </main>
   );
 }
