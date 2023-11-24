@@ -133,9 +133,9 @@ export default function Home() {
       >
         <motion.div
           style={{ x: imageXCalc, opacity: opacity }}
-          className="mb-[250px] px-5 -ml-16 sm:block hidden"
+          className="mb-[250px] px-5"
         >
-          <div className="-ml-24 -mt-7 ">
+          <div className="-mt-7 -ml-32 sm:block hidden">
             <SmileAnim />
           </div>
         </motion.div>

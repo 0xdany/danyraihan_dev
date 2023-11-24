@@ -17,7 +17,7 @@ export const AwardAnim = () => {
 export const SmileAnim = () => {
   return (
     <>
-      <div className="h-96 w-96">
+      <div className="h-96 w-96 bg">
         <DotLottiePlayer
           src="/SmileAnim"
           autoplay
