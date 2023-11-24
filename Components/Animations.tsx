@@ -17,7 +17,7 @@ export const AwardAnim = () => {
 export const SmileAnim = () => {
   return (
     <>
-      <div className="h-[350px] w-[350px]">
+      <div className="h-96 w-96">
         <DotLottiePlayer
           src="/SmileAnim"
           autoplay
@@ -25,7 +25,7 @@ export const SmileAnim = () => {
           speed={0.6}
           intermission={2000}
         >
-          <div className="text-white flex justify-center  font-medium -mt-10">
+          <div className="text-white flex justify-center  font-medium -mt-14">
             Scroll for more
           </div>
         </DotLottiePlayer>
