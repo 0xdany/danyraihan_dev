@@ -139,6 +139,7 @@ export default function Home() {
             width="250"
             height="250"
             className="-ml-16 sm:block hidden"
+            alt="smile"
           />
           <div className="text-white flex justify-start font-normal">
             Scroll for more
