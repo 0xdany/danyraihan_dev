@@ -13,10 +13,10 @@ import {
 
 import "@/styles/globals.css";
 
-import NameCard from "@/Components/NameCard";
-import SkillSection from "@/Components/SkillSection";
-import ActivityLog from "@/Components/ActivityLog";
-import AwardSection from "@/Components/AwardSection";
+import NameCard from "@/components/NameCard";
+import SkillSection from "@/components/SkillSection";
+import ActivityLog from "@/components/ActivityLog";
+import AwardSection from "@/components/AwardSection";
 
 export default function Home() {
   const ref = useRef(null);
@@ -88,7 +88,7 @@ export default function Home() {
 
       {/* Rest */}
       <div className="flex justify-center bg-gradient-to-b from-sky-400 to-cyan-400">
-        <div className="flex w-[1600px]  max-w-[90%] flex-col items-center justify-center pb-10 ">
+        <div className="flex w-[1600px]  max-w-[90%] flex-col items-center justify-center pb-10">
           <AwardSection />
         </div>
       </div>
