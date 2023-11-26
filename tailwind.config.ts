@@ -8,7 +8,6 @@ const config: Config = {
     "app/**/*.{ts,tsx}",
     "components/**/*.{ts,tsx}",
     "pages/**/*.{ts,tsx}",
-    "assetComp/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
