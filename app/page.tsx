@@ -13,10 +13,10 @@ import {
 
 import "@/styles/globals.css";
 
-import NameCard from "@/components/NameCard";
-import SkillSection from "@/components/SkillSection";
-import ActivityLog from "@/components/ActivityLog";
-import AwardSection from "@/components/AwardSection";
+import NameCard from "@/assetComp/NameCard";
+import SkillSection from "@/assetComp/SkillSection";
+import ActivityLog from "@/assetComp/ActivityLog";
+import AwardSection from "@/assetComp/AwardSection";
 
 export default function Home() {
   const ref = useRef(null);
