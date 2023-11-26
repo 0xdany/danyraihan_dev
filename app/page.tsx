@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+
 import {
   MotionValue,
   motion,
@@ -33,7 +33,7 @@ export default function Home() {
   const scale = useTransform(scrollYProgressSpring, [0, 1], [1, 12]);
   const imageX = useTransform(scrollYProgressSpring, [0, 1], [50, 0]);
   const imageXCalc = useMotionTemplate`max(0px, calc(${imageX}% + calc(${imageX}vw - 300px)))`;
-  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.15], [1, 0]);
   const opacityReverse = useTransform(
     scrollYProgress,
     [0, 0.18, 0.25],
@@ -61,9 +61,9 @@ export default function Home() {
         {/* Smile */}
         <motion.div
           style={{ x: imageXCalc, opacity: opacity }}
-          className="mb-[250px] px-5"
+          className="mb-[400px] px-5"
         >
-          <div className="ml-[-132px] mt-[-40px] hidden h-64 w-64 sm:block">
+          <div className="ml-[-132px] mt-[-40px] hidden h-64 w-64 pb-10 sm:block">
             <SmileLottie />
           </div>
         </motion.div>
@@ -71,7 +71,7 @@ export default function Home() {
         {/* Next Section */}
         <motion.div
           style={{ x: imageXCalc, opacity: opacityReverse }}
-          className="sticky top-1/2 mx-auto grid w-[1600px] max-w-[90%]  grid-cols-1 justify-items-center rounded-[60px] bg-white shadow-2xl md:top-1/4"
+          className="sticky top-1/2 mx-auto grid w-[1600px] max-w-[90%] grid-cols-1 justify-items-center rounded-[60px] bg-white shadow-2xl md:top-1/4"
         >
           {/* Area inside hole */}
           <div className="flex-col pb-10">

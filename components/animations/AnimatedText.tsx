@@ -13,20 +13,7 @@ type AnimatedTextProps = {
     hidden: Variant;
     visible: Variant;
   };
-};
-
-const defaultAnimations = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.1,
-    },
-  },
+  time?: number;
 };
 
 export default function AnimatedText({
@@ -35,7 +22,7 @@ export default function AnimatedText({
   className,
   once,
   repeatDelay,
-  animation = defaultAnimations,
+  time = 0.2,
 }: AnimatedTextProps) {
   const controls = useAnimation();
   const textArray = Array.isArray(text) ? text : [text];
@@ -84,7 +71,19 @@ export default function AnimatedText({
                   <motion.span
                     key={`${char}-${charIndex}`}
                     className="inline-block"
-                    variants={animation}
+                    variants={{
+                      hidden: {
+                        opacity: 0,
+                        y: 20,
+                      },
+                      visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                          duration: time,
+                        },
+                      },
+                    }}
                   >
                     {char}
                   </motion.span>
