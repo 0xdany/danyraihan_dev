@@ -18,6 +18,8 @@ import SkillSection from "@/components/SkillSection";
 import ActivityLog from "@/components/ActivityLog";
 import AwardSection from "@/components/AwardSection";
 
+import { SmileLottie } from "@/components/animations/Lotties";
+
 export default function Home() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -61,16 +63,8 @@ export default function Home() {
           style={{ x: imageXCalc, opacity: opacity }}
           className="mb-[250px] px-5"
         >
-          <Image
-            priority
-            src="smile.svg"
-            width="250"
-            height="250"
-            className="-ml-16 hidden sm:block"
-            alt="smile"
-          />
-          <div className="flex justify-start font-normal text-white">
-            Scroll for more
+          <div className="ml-[-68px] hidden h-64 w-64 sm:block">
+            <SmileLottie />
           </div>
         </motion.div>
 
