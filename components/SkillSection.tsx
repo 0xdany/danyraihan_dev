@@ -1,4 +1,4 @@
-import AnimatedText from "@/components/Animations/AnimatedText";
+import AnimatedText from "@/components/animations/AnimatedText";
 
 const SkillSection = () => {
   return (
