@@ -63,7 +63,7 @@ export default function Home() {
           style={{ x: imageXCalc, opacity: opacity }}
           className="mb-[250px] px-5"
         >
-          <div className="ml-[-68px] hidden h-64 w-64 sm:block">
+          <div className="ml-[-132px] mt-[-40px] hidden h-64 w-64 sm:block">
             <SmileLottie />
           </div>
         </motion.div>
