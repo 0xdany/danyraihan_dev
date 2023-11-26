@@ -2,12 +2,14 @@ import AnimatedText from "./animations/AnimatedText";
 
 const items = [
   {
+    id: 1,
     title: "Best Overall Research in Capstone Conference",
     date: "AUG 2023",
     issuer: "Issued by The University of British Columbia",
     desc: "Our research project focused on investigating the specific characteristics of the P-53 tumor suppressor gene. To achieve this, we created a comprehensive database within a controlled environmental model to generate the P-53 tumor suppressor gene mutagen mutational pathway.",
   },
   {
+    id: 2,
     title: "Indonesia Maju Undergraduate Scholarship",
     date: "APR 2022",
     issuer:
@@ -29,7 +31,10 @@ const AwardSection = () => {
       {/* awards */}
       <div className="h-fit w-full space-y-6">
         {items.map((item) => (
-          <div className="flex flex-row justify-between gap-6 rounded-3xl bg-gradient-to-r from-white to-sky-200 px-6 py-4 text-slate-800 shadow-xl">
+          <div
+            className="flex flex-row justify-between gap-6 rounded-3xl bg-gradient-to-r from-white to-sky-200 px-6 py-4 text-slate-800 shadow-xl"
+            key={item.id}
+          >
             <div>
               <AnimatedText
                 text={item.title}
