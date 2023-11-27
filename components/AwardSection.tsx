@@ -14,7 +14,7 @@ const items = [
     date: "APR 2022",
     issuer:
       "Issued by The Ministry of Education, Culture, and Technology of Indonesia",
-    desc: "Received a full-ride undergraduate degree scholarship for performance in the Indonesia Informatics Olympiad 2020",
+    desc: "Received a full-ride undergraduate degree scholarship for performance in the Indonesia Informatics Olympiad 2020.",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const items = [
     title: "First Place in Creative IRO, IIBF-ROCI Robotic Competition",
     date: "SEP 2018",
     issuer: "Issued by Robotic Organizing Committee Indonesia",
-    desc: "Created an intergated plant incubator for the seeding phase. It adjusted the encapsulated environment based on variable changes in soil humidity, fertilizer content, and lumination level to mimic the ideal growing environment..",
+    desc: "Created an intergated plant incubator for the seeding phase. It adjusted the encapsulated environment based on variable changes in soil humidity, fertilizer content, and lumination level to mimic the ideal growing environment.",
   },
 ];
 
