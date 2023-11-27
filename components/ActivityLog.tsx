@@ -52,7 +52,7 @@ const items = [
     link: "",
     type: "Research",
     tool: "Language: C++",
-    language: "Language: Solidity, Javascript, HTML",
+    language: "Language: Arduino IDE",
     content:
       "As a researcher, I developed a small-scale decentralized body temperature wearable using ESP32 development board and MCP9808 module • Customized power management system and temperature modules layout in the board using Fritzing • Implemented a data parser to extract data from Serial Data Line (SDA) • Constructed real-time connection to ThingSpeak API public channel.",
   },

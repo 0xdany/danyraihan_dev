@@ -3,7 +3,7 @@ import AnimatedText from "./animations/AnimatedText";
 const items = [
   {
     id: 1,
-    title: "Best Overall Research in Capstone Conference",
+    title: "Best Overall Research, Capstone Conference",
     date: "AUG 2023",
     issuer: "Issued by The University of British Columbia",
     desc: "Our research project focused on investigating the specific characteristics of the P-53 tumor suppressor gene. To achieve this, we created a comprehensive database within a controlled environmental model to generate the P-53 tumor suppressor gene mutagen mutational pathway.",
@@ -15,6 +15,35 @@ const items = [
     issuer:
       "Issued by The Ministry of Education, Culture, and Technology of Indonesia",
     desc: "Received a full-ride undergraduate degree scholarship for performance in the Indonesia Informatics Olympiad 2020",
+  },
+  {
+    id: 3,
+    title:
+      "Third Place in Asian Parliamentary Debate, Cendana English Fair XIX",
+    date: "NOV 2021",
+    issuer: "Issued by Bengkulu Public High School V",
+    desc: "Worked with a team of three to debate competitively on several motions in the Asian Parliamentary format. The motions were related to current issues, such as the COVID-19 pandemic, the Omnibus Law, and the  Presidential Election.",
+  },
+  {
+    id: 3,
+    title: "First Place, Tech Innovation Fair 2021",
+    date: "OCT 2021",
+    issuer: "Issued by Regional Development Planning Board of Bengkulu",
+    desc: "Developed a locally decentralized body temperature wearable. It would allow people to monitor changing body temperatures among each other and provide early fever indications to mitigate the risk of potential spreading.",
+  },
+  {
+    id: 4,
+    title: "First Place, Tech Innovation Fair 2019",
+    date: "OCT 2019",
+    issuer: "Issued by Regional Development Planning Board of Bengkulu",
+    desc: "Built an adaptable water control gate for small- to medium-level irrigation. The water control system adjusts itself based on changing water streams across the system to avoid potential overflow. Current information would also be broadcast continuously to the stakeholder's devices.",
+  },
+  {
+    id: 99,
+    title: "First Place in Creative IRO, IIBF-ROCI Robotic Competition",
+    date: "SEP 2018",
+    issuer: "Issued by Robotic Organizing Committee Indonesia",
+    desc: "Created an intergated plant incubator for the seeding phase. It adjusted the encapsulated environment based on variable changes in soil humidity, fertilizer content, and lumination level to mimic the ideal growing environment..",
   },
 ];
 
@@ -47,7 +76,7 @@ const AwardSection = () => {
                 repeatDelay={10000}
               />
               <p className="mt-2 pl-1 text-base font-normal text-slate-500">
-                text={item.desc}
+                {item.desc}
               </p>
             </div>
 
@@ -59,7 +88,9 @@ const AwardSection = () => {
           </div>
         ))}
 
-        <p>More to be added</p>
+        <div className="mt-10 text-center text-[200px] font-thin leading-none tracking-widest text-white">
+          More to be added ...
+        </div>
       </div>
     </div>
   );
