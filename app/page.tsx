@@ -61,7 +61,7 @@ export default function Home() {
         {/* Smile */}
         <motion.div
           style={{ x: imageXCalc, opacity: opacity }}
-          className="mb-[400px] px-5"
+          className="mb-[400px] hidden px-5 md:block"
         >
           <div className="ml-[-132px] mt-[-40px] hidden h-64 w-64 pb-10 sm:block">
             <SmileLottie />

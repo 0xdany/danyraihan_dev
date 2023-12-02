@@ -1,17 +1,17 @@
 const NameCard = () => {
   return (
-    <div className="flex h-full w-4/5 flex-col rounded-xl px-8 py-5 shadow-md">
+    <div className="flex h-full flex-col rounded-xl px-8 py-5 shadow-md sm:w-4/5">
       <div className="mb-1 md:mb-auto">
-        <p className="font-md inline-block bg-gradient-to-r from-cyan-800 to-orange-950 bg-clip-text py-2 font-sans text-2xl font-semibold leading-loose text-transparent md:text-4xl xl:text-6xl">
+        <p className="fluid-heading bg-gradient-to-r from-cyan-800 to-orange-950 bg-clip-text font-sans  font-semibold leading-loose leading-none text-transparent ">
           Dany Raihan
         </p>
-        <p className="font-md ml-1 border-t-[2px] border-slate-200 text-xs text-slate-500 lg:text-base xl:text-lg">
+        <p className="fluid-sm ml-1 border-t-[2px]  border-slate-200 pb-1 pt-4 text-slate-500 sm:pb-6">
           2nd Year Major in Computer Science at UBC
         </p>
       </div>
 
       {/* Perks */}
-      <div className="mt-6 space-y-1 pl-1 text-xs sm:mt-0 lg:text-sm xl:text-base">
+      <div className="fluid-xs mt-6  space-y-1 pl-1 sm:mt-0">
         <p className="mb-1 border-b-[1px] border-slate-200">
           Full-Stack Developer
         </p>

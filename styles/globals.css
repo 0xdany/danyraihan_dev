@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/**
- * Because of limitations in our playground, any updates you
- * do in the styles below, won't be reflected in the playground unfortunately.
- */
-
 .hero-background {
   background: linear-gradient(
       to bottom,
@@ -28,13 +23,45 @@
   mask-image: linear-gradient(black, black), url("window.svg");
   mask-composite: exclude;
   mask-repeat: no-repeat;
-  mask-size: auto, 300px auto;
-  mask-position: center center, center right 3rem;
+  mask-size:
+    auto,
+    300px auto;
+  mask-position:
+    center center,
+    center right 3rem;
 }
 
 @media (max-width: theme("screens.md")) {
   .window-mask {
-    mask-size: auto, 150px auto;
-    mask-position: center center, center bottom 1.5rem;
+    mask-size:
+      auto,
+      150px auto;
+    mask-position:
+      center center,
+      center bottom 1.5rem;
   }
+}
+
+.fluid-sm {
+  font-size: clamp(12px, 3vw, 14px);
+}
+
+.fluid-sm {
+  font-size: clamp(14px, 3vw, 16px);
+}
+
+.fluid-base {
+  font-size: clamp(18px, 3vw, 20px);
+}
+
+.fluid-lg {
+  font-size: clamp(22px, 3vw, 28px);
+}
+
+.fluid-xl {
+  font-size: clamp(28px, 4vw, 36px);
+}
+
+.fluid-heading {
+  font-size: clamp(20px, 12vw, 70px);
 }

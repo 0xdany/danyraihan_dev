@@ -49,10 +49,10 @@ const items = [
 
 const AwardSection = () => {
   return (
-    <div className="block h-fit w-full items-center justify-center space-y-6 ">
+    <div className="block h-fit w-full items-center justify-center space-y-6">
       {/* Title */}
       <div className="flex justify-center border-b-[1px] border-white py-2 pb-4">
-        <p className="inline-block justify-center bg-gradient-to-r from-zinc-200 via-white to-slate-200 bg-clip-text py-1 text-5xl font-bold text-transparent">
+        <p className="fluid-heading inline-block justify-center bg-gradient-to-r from-zinc-200 via-white to-slate-200 bg-clip-text py-1 font-bold text-transparent">
           AWARDS
         </p>
       </div>
@@ -67,29 +67,30 @@ const AwardSection = () => {
             <div>
               <AnimatedText
                 text={item.title}
-                className="text-2xl font-bold"
+                className="fluid-base font-bold"
                 repeatDelay={10000}
               />
               <AnimatedText
                 text={item.issuer}
-                className="border-b-2 border-sky-100 pl-1 text-base font-light text-slate-700"
+                className="fluid-sm border-b-2 border-sky-100 pl-1 font-light text-slate-700"
                 repeatDelay={10000}
               />
-              <p className="mt-2 pl-1 text-base font-normal text-slate-500">
+              <p className="fluid-sm mt-2 pl-1 font-normal text-slate-500">
                 {item.desc}
               </p>
             </div>
 
             <AnimatedText
               text={item.date}
-              className="mt-2 w-2/12 text-right text-2xl font-bold"
+              className="fluid-sm mt-2 w-2/12 text-right font-bold"
               repeatDelay={10000}
             />
           </div>
         ))}
 
-        <div className="mt-10 text-center text-[200px] font-thin leading-none tracking-widest text-white">
-          More to be added ...
+        <div className="fluid-lg mt-10 text-center font-thin leading-none tracking-widest text-white">
+          This section is under construction... <br />
+          🚜 🚜 🚜
         </div>
       </div>
     </div>

@@ -63,8 +63,8 @@ const ActivityLog = () => {
     <div>
       {/* Title */}
       <div className="flex justify-center border-b-[1px] border-slate-400 py-2 pb-4">
-        <p className="inline-block justify-center bg-gradient-to-r from-orange-700 to-cyan-600 bg-clip-text py-1 text-5xl font-bold text-transparent">
-          Activity log
+        <p className="fluid-xl inline-block justify-center bg-gradient-to-r from-orange-700 to-cyan-600 bg-clip-text py-1 font-bold text-transparent">
+          ACTIVITY LOG
         </p>
       </div>
 
@@ -80,7 +80,7 @@ const ActivityLog = () => {
                 <a
                   href={item.link}
                   target="_blank"
-                  className="flex gap-1 rounded-xl  bg-gradient-to-r from-slate-800 to-orange-800 px-2 py-1 text-xl font-bold text-white"
+                  className="fluid-base flex gap-1 rounded-xl  bg-gradient-to-r from-slate-800 to-orange-800 px-2 py-1  font-bold text-white"
                 >
                   {item.title}
                   <Image
@@ -92,17 +92,17 @@ const ActivityLog = () => {
                   />
                 </a>
               ) : (
-                <p className="flex gap-1 rounded-xl  bg-slate-700 px-2 py-1 text-xl font-bold text-white">
+                <p className="fluid-base flex gap-1  rounded-xl bg-slate-700 px-2 py-1 font-bold text-white">
                   {item.title}
                 </p>
               )}
             </div>
 
             {/* Tech */}
-            <div className="py-2 font-semibold text-slate-600 md:flex ">
+            <div className="fluid-sm py-2 font-semibold text-slate-600 lg:flex ">
               <div className="flex-none">{item.type}</div>
 
-              <div className="justify-center md:flex  md:grow  md:px-4">
+              <div className="lg:flex lg:grow  lg:justify-center  lg:px-4">
                 {item.tool}
               </div>
 
@@ -110,7 +110,7 @@ const ActivityLog = () => {
             </div>
 
             {/* Content */}
-            <div className="leading-7 text-slate-500 md:leading-8">
+            <div className="fluid-sm leading-7 text-slate-500 md:leading-8">
               {item.content}
             </div>
           </div>
