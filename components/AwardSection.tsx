@@ -82,7 +82,7 @@ const AwardSection = () => {
 
             <AnimatedText
               text={item.date}
-              className="fluid-sm mt-2 w-2/12 text-right font-bold"
+              className="fluid-sm mt-2 w-[5px] text-left font-bold sm:text-right lg:w-2/12"
               repeatDelay={10000}
             />
           </div>

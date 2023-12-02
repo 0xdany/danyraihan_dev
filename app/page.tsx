@@ -50,7 +50,7 @@ export default function Home() {
           <div className="window-mask flex flex-col gap-10 rounded-3xl bg-white p-12 md:flex-row ">
             <NameCard />
             <SkillSection />
-            {/* The amazing hole */}
+            {/* The amazing hole place */}
             <div className="mx-auto -mb-7 mt-4 box-content h-[90%] w-[100%] min-w-[150px] md:my-auto md:-mr-1 md:ml-auto md:w-[300px] md:min-w-[300px]" />
           </div>
         </motion.div>
@@ -71,7 +71,7 @@ export default function Home() {
         {/* Next Section */}
         <motion.div
           style={{ x: imageXCalc, opacity: opacityReverse }}
-          className="sticky top-1/2 mx-auto grid w-[1600px] max-w-[90%] grid-cols-1 justify-items-center rounded-[60px] bg-white shadow-2xl md:top-1/4"
+          className="sticky top-1/2 mx-auto mt-[650px] grid w-[1600px] max-w-[90%] grid-cols-1 justify-items-center rounded-[60px] bg-white shadow-2xl md:top-1/4 md:mt-1"
         >
           {/* Area inside hole */}
           <div className="flex-col pb-10">
