@@ -2,7 +2,7 @@ const NameCard = () => {
   return (
     <div className="flex h-full flex-col rounded-xl px-8 py-5 shadow-md sm:w-4/5">
       <div className="mb-1 md:mb-auto">
-        <p className="fluid-heading bg-gradient-to-r from-cyan-800 to-orange-950 bg-clip-text font-sans  font-semibold leading-loose leading-none text-transparent ">
+        <p className="fluid-heading bg-gradient-to-r from-cyan-800 to-orange-950 bg-clip-text font-sans  font-semibold leading-none text-transparent ">
           Dany Raihan
         </p>
         <p className="fluid-sm ml-1 border-t-[2px]  border-slate-200 pb-1 pt-4 text-slate-500 sm:pb-6">
