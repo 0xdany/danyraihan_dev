@@ -8,7 +8,7 @@ const SkillSection = () => {
     <div className="hidden h-[450px] w-full flex-col items-center justify-center overflow-hidden px-6 lg:flex ">
       <div className=" items-centermt-6 mb-4 flex flex-col justify-center ">
         <div className="fluid-lg bg-gradient-to-r from-orange-700 to-cyan-600 bg-clip-text px-4 font-semibold text-transparent">
-          I have worked with
+          Work with
         </div>
         <span className="fluid-sm inline-flex justify-center font-light xl:hidden">
           {" "}
@@ -20,7 +20,7 @@ const SkillSection = () => {
         <AnimatedText
           el="p"
           text={
-            "NextJs • ReactJS • TailwindCSS • Unity • MongoDB • Supabase • Solidity • C++ • Java • C# • PosgreSQL • Arduino • Figma • Arduino • Vercel • R • Jupiter • IntelliJ • VS Code • Github"
+            "NextJs • ReactJS • TailwindCSS • Unity • MongoDB • Supabase • Solidity • C++ • Java • C# • PosgreSQL • Arduino • Figma • Arduino • Vercel • R • Jupiter • IntelliJ • VS Code • Github • and many more..."
           }
           className="fluid-base h-full text-center text-slate-700"
           repeatDelay={10000}
