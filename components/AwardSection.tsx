@@ -91,7 +91,7 @@ const AwardSection = () => {
 
         <div className="fluid-lg mt-10 text-center font-thin leading-none tracking-widest text-white">
           This section is under construction... <br />
-          🚜 🚜 🚜
+          🚜 🚜
         </div>
       </div>
     </div>
