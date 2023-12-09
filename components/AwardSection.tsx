@@ -1,4 +1,5 @@
 import AnimatedText from "./animations/AnimatedText";
+import Magnetic from "./animations/Magnetic";
 
 const items = [
   {

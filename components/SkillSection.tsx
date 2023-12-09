@@ -1,4 +1,7 @@
+import Image from "next/image";
+
 import AnimatedText from "@/components/animations/AnimatedText";
+import Magnetic from "./animations/Magnetic";
 
 const SkillSection = () => {
   return (
@@ -22,6 +25,17 @@ const SkillSection = () => {
           className="fluid-base h-full text-center text-slate-700"
           repeatDelay={10000}
         />
+      </div>
+      <div className="flex h-max w-max">
+        <Magnetic>
+          <Image priority src="github.svg" width="32" height="32" alt="a" />
+        </Magnetic>
+        <Magnetic>
+          <Image priority src="nextjs.svg" width="32" height="32" alt="a" />
+        </Magnetic>
+        <Magnetic>
+          <Image priority src="tailwind.svg" width="32" height="32" alt="a" />
+        </Magnetic>
       </div>
     </div>
   );
