@@ -26,7 +26,7 @@ export default function Magnetic({ children }: any) {
       onMouseLeave={reset}
       animate={{ x, y }}
       transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
-      className="cursor-pointer p-6 transition-colors hover:fill-red-500"
+      className="cursor-pointer p-5 transition-colors hover:fill-red-500"
     >
       <div className="flex h-7 w-7 items-center justify-center">{children}</div>
     </motion.div>
