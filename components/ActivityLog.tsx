@@ -64,7 +64,7 @@ const ActivityLog = () => {
       {/* Title */}
       <div className="flex justify-center border-b-[1px] border-slate-400 py-2 pb-4">
         <p className="fluid-xl inline-block justify-center bg-gradient-to-r from-orange-700 to-cyan-600 bg-clip-text py-1 font-bold text-transparent">
-          ACTIVITY LOG
+          Activity Log
         </p>
       </div>
 

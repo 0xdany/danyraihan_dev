@@ -53,7 +53,7 @@ const AwardSection = () => {
       {/* Title */}
       <div className="flex justify-center border-b-[1px] border-white py-2 pb-4">
         <p className="fluid-heading inline-block justify-center bg-gradient-to-r from-zinc-200 via-white to-slate-200 bg-clip-text py-1 font-bold text-transparent">
-          AWARDS
+          Awards
         </p>
       </div>
 
