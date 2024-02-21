@@ -46,7 +46,7 @@
   font-size: clamp(12px, 3vw, 14px);
 }
 
-.fluid-sm {
+.fluid-md {
   font-size: clamp(14px, 3vw, 16px);
 }
 

@@ -5,7 +5,7 @@ import Magnetic from "./animations/Magnetic";
 
 const SkillSection = () => {
   return (
-    <div className="hidden h-[450px] w-full flex-col items-center justify-center overflow-hidden px-6 lg:flex ">
+    <div className="hidden h-[450px] w-full flex-col items-center justify-center overflow-hidden bg-red-400 px-6 lg:flext ">
       <div className=" items-centermt-6 mb-4 flex flex-col justify-center ">
         <div className="fluid-lg bg-gradient-to-r from-orange-700 to-cyan-600 bg-clip-text px-4 font-semibold text-transparent">
           Work with
