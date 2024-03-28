@@ -16,7 +16,7 @@ const DescriptionCard = () => {
 
       <div className="flex w-full justify-between">
         <a
-          href="https://drive.google.com/file/d/1OjP6e57oLCx0RjJBhFRcl1iRr1MlMOUC/view?usp=sharing"
+          href="https://drive.google.com/file/d/1PxObUfXUoEvsziL8C0wRt3iTKYPnesOQ/view?usp=sharing"
           target="_blank"
           className="bg-gradient-to-r from-cyan-800 to-blue-600 bg-clip-text text-transparent"
         >
